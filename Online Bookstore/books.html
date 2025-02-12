@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Antiques</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <style>
+        body {
+            background-color: #333;
+        }
+
+        header {
+            color: black;
+            background: dimgrey;
+            padding: 10px 7px 10px 5px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+            margin: 0 2px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            text-decoration: underline;
+        }
+
+        .position-relative {
+            position: relative;
+            background-color: dimgrey;
+            color: black;
+            border: none;
+            font-size: 18px;
+            padding: 6px;
+        }
+
+        .heading-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+        }
+
+        header .searchcomponent {
+            display: flex;
+            width: 300px;
+            height: 28px;
+            background-color: black;
+            border-radius: 3px;
+        }
+
+        .inputbar {
+            width: 100%;
+            padding: 5px;
+            border: none;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        .inputbar::placeholder {
+            font-size: 14px;
+        }
+
+        .search-icon {
+            width: 40px;
+            font-size: 21px;
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        .dropdown-toggle {
+            background-color: dimgrey;
+            color: black;
+            font-size: 22px;
+            border: none;
+            text-decoration: none;
+            padding: 0 3px;
+            margin-right: 1px;
+        }
+
+        .dropdown-toggle::after {
+            margin: 0;
+        }
+
+        .dropdown-menu {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            --bs-dropdown-link-hover-bg: none;
+            --bs-dropdown-link-hover-color: none;
+        }
+
+        .dropdown-item {
+            color: ivory;
+        }
+
+        .card {
+            background-color: black;
+            color: white;
+            height: 390px;
+            margin: 10px;
+        }
+
+        .card-body {
+            padding: 6px;
+        }
+
+        .card img {
+            object-fit: contain;
+            width: 100%;
+            height: 200px;
+        }
+
+        h1 {
+            color: black;
+            font-size: 32px;
+        }
+
+        h3 {
+            padding: 6px;
+            color: white;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            background-color: black;
+            text-align: center;
+        }
+
+        .carousel-inner {
+            padding: 10px;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="heading-container container-fluid">
+            <h1>THE BOOK ANTIQUES</h1>
+            <nav>
+                <div class="dropdown-center">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Account
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/account.html">Log In</a></li>
+                        <li><a class="dropdown-item" href="signin.html">New here? Sign In</a></li>
+                        <hr>
+                        <li><a class="dropdown-item" href="#">Your Orders</a></li>
+                    </ul>
+                </div> |
+                <a href="/Index.html">Home</a> |
+                <a href="/books.html">Books</a> |
+                <a href="/about.html">About Us</a> |
+                <div class="cart-container">
+                    <a href="/cart.html" class="btn btn-light position-relative">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="searchcomponent">
+            <input type="text" placeholder="Search by Title,Author,Publisher or ISBN" id="inputbar" class="inputbar">
+            <div class="search-icon" role="button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </header>
+    <h3>Kids</h3>
+    <div id="bookCarousel" class="carousel slide container-fluid" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th?id=OPAC.KJ0CUSYOpmas%2bA474C474&w=220&h=210&c=17&o=5&dpr=1.3&pid=21.1"
+                                class="card-img-top" alt="The Shoemaker and the Elves101 Rhymes">
+                            <div class="card-body">
+                                <h5 class="card-title">The Shoemaker and the Elves</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1"
+                                    data-title="The Shoemaker and the Elves" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th?id=OPAC.t8x1GgbOVT7hWQ474C474&w=220&h=210&c=17&o=5&dpr=1.3&pid=21.1"
+                                class="card-img-top" alt="101 Rhymes">
+                            <div class="card-body">
+                                <h5 class="card-title">101 Rhymes</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="2" data-title="101 Rhymes"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/17498613a.webp"
+                                class="card-img-top" alt="101 pachatantra and Fairy tales">
+                            <div class="card-body">
+                                <h5 class="card-title">101 pachatantra and Fairy tales</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="3"
+                                    data-title="101 pachatantra and Fairy tales" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/811YNmql4jL._AC_UY327_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="The Jungle Book">
+                            <div class="card-body">
+                                <h5 class="card-title">The Jungle Book</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="4" data-title="The Jungle Book"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/81Te1en1tNL._AC_UY327_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="Alice In Wonderland">
+                            <div class="card-body">
+                                <h5 class="card-title">Alice In Wonderland</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5"
+                                    data-title="Alice In Wonderland" 365 Moral StoriesLittle Red Riding Hood
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th?id=OPAC.wxvET6t8xwpsFA474C474&w=220&h=210&c=17&o=5&dpr=1.3&pid=21.1"
+                                class="card-img-top" alt="365 Moral Stories">
+                            <div class="card-body">
+                                <h5 class="card-title">365 Moral Stories</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6" data-title="365 Moral Stories"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th?id=OPAC.A2ZvEUPaW6m5QQ474C474&w=220&h=210&c=17&o=5&dpr=1.3&pid=21.1"
+                                class="card-img-top" alt="Little Red Riding Hood">
+                            <div class="card-body">
+                                <h5 class="card-title">Little Red Riding Hood</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7"
+                                    data-title="Little Red Riding Hood" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1660610013i/61989935.jpg"
+                                class="card-img-top" alt="The Secret Garden">
+                            <div class="card-body">
+                                <h5 class="card-title">The Secret Garden</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8" data-title="The Secret Garden"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/71Wcm0WWBnS._AC_UY327_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="All Time Favourites ~ Ruskin Bond">
+                            <div class="card-body">
+                                <h5 class="card-title">All Time Favourites ~ Ruskin Bond</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5"
+                                    data-title="All Time Favourites ~ Ruskin Bond" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/61PpqbUQVrL._AC_UY327_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="Famous Tales of Rabindranath Tagore">
+                            <div class="card-body">
+                                <h5 class="card-title">Famous Tales of Rabindranath Tagore</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6"
+                                    data-title="Famous Tales of Rabindranath Tagore" data-price="72">Add To
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://img1.etsystatic.com/005/0/6512309/il_fullxfull.375564393_phv5.jpg"
+                                class="card-img-top" alt="Ali Baba and The Forty Thieves">
+                            <div class="card-body">
+                                <h5 class="card-title">Ali Baba and The Forty Thieves</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7"
+                                    data-title="Ali Baba and The Forty Thieves" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://dynamic.indigoimages.ca/v1/books/books/0794444377/1.jpg?width=614&maxheight=614&quality=85"
+                                class="card-img-top" alt="Aladdin">
+                            <div class="card-body">
+                                <h5 class="card-title">Aladdin</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8" data-title="Aladdin"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <h3>Mystery/Thriller</h3>
+    <div id="bookCarousel-2" class="carousel slide container-fluid" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://i5.walmartimages.com/asr/c25f92ba-28f0-49d9-add7-ea1d2abf756e.16d0785869dd1954cbc0fd6968c1d607.jpeg"
+                                class="card-img-top" alt="Truly Devious trilogy">
+                            <div class="card-body">
+                                <h5 class="card-title">Truly Devious trilogy</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1"
+                                    data-title="Truly Devious trilogy" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://i.ebayimg.com/images/g/g2UAAOSwZmhiamEG/s-l1600.jpg" class="card-img-top"
+                                alt="A Good Girl's Guide To Murder">
+                            <div class="card-body">
+                                <h5 class="card-title">A Good Girl's Guide To Murder</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="2"
+                                    data-title="A Good Girl's Guide to Murder" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://img1.od-cdn.com/ImageType-100/2343-1/%7B571561CA-E476-4B98-AEBA-E59575A34918%7DIMG100.JPG"
+                                class="card-img-top" alt="The Inmate">
+                            <div class="card-body">
+                                <h5 class="card-title">The Inmate</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="3" data-title="The Inmate"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/415a2TwFvvL.jpg" class="card-img-top"
+                                alt="The Lies We Told">
+                            <div class="card-body">
+                                <h5 class="card-title">The Lies We Told</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="4" data-title="The Lies We Told"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.voJTbiksSJE896yXzwZ7KwHaLL?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Lock Every Door">
+                            <div class="card-body">
+                                <h5 class="card-title">Lock Every Door</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5" data-title="Lock Every Door"
+                                    365 Moral StoriesLittle Red Riding Hood data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://dynamic.indigoimages.ca/v1/books/books/0593183185/1.jpg?width=614&maxheight=614&quality=85"
+                                class="card-img-top" alt="Survive The Night">
+                            <div class="card-body">
+                                <h5 class="card-title">Survive The Night</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6" data-title="Survive The Night"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://img1.od-cdn.com/ImageType-100/1191-1/%7BC80114AE-A6FC-45EB-9A5A-F0ECA169586C%7DIMG100.JPG"
+                                class="card-img-top" alt="The House Across The Lake">
+                            <div class="card-body">
+                                <h5 class="card-title">The House Across The Lake</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7"
+                                    data-title="The House Across The Lake" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://images3.penguinrandomhouse.com/cover/9780399545924" class="card-img-top"
+                                alt="The Companion">
+                            <div class="card-body">
+                                <h5 class="card-title">The Companion</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8" data-title="The Companion"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1690077068i/141236527.jpg"
+                                class="card-img-top" alt="The Stranger in Her House">
+                            <div class="card-body">
+                                <h5 class="card-title">The Stranger In Her House</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5"
+                                    data-title="The Stranger in Her House" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://img1.od-cdn.com/ImageType-100/5054-1/%7B378D229C-FF79-41BD-8BBC-B022E62B548F%7DIMG100.JPG"
+                                class="card-img-top" alt="None Of This Is True">
+                            <div class="card-body">
+                                <h5 class="card-title">None Of This Is True</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6"
+                                    data-title="None Of This Is True" data-price="72">Add To
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/81cVdUnn62L._SL1500_.jpg" class="card-img-top"
+                                alt="The Kind Worth Killing">
+                            <div class="card-body">
+                                <h5 class="card-title">The Kind Worth Killing</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7"
+                                    data-title="The Kind Worth Killing" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1650843418i/59316367.jpg"
+                                class="card-img-top" alt="Look Closer">
+                            <div class="card-body">
+                                <h5 class="card-title">Look Closer</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8" data-title="Look Closer"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel-2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel-2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <h3>Romance</h3>
+    <div id="bookCarousel-3" class="carousel slide container-fluid" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/51URhXfD6lL.jpg" class="card-img-top"
+                                alt="Twisted Devotion">
+                            <div class="card-body">
+                                <h5 class="card-title">Twisted Devotion</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1" data-title="Twisted Devotion"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1655247714i/60034351.jpg"
+                                class="card-img-top" alt="Does It Hurt?">
+                            <div class="card-body">
+                                <h5 class="card-title">Does It Hurt?</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="2" data-title="Does It Hurt?"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1628900532i/58763686.jpg"
+                                class="card-img-top" alt="The Haunting Adeline">
+                            <div class="card-body">
+                                <h5 class="card-title">The Haunting Adeline</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="3"
+                                    data-title="The Haunting Adeline" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://covers.shakespeareandcompany.com/97803494/9780349436326.jpg"
+                                class="card-img-top" alt="king Of Wrath">
+                            <div class="card-body">
+                                <h5 class="card-title">King Of Wrath</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="4" data-title="king Of Wrath"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/71Vhx97uOCL._AC_UF1000,1000_QL80_.jpg"
+                                class="card-img-top" alt="The Twisted Series">
+                            <div class="card-body">
+                                <h5 class="card-title">The Twisted Series</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5"
+                                    data-title="The Twisted Series" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/71Bd3T57cKL._AC_UF894,1000_QL80_.jpg"
+                                class="card-img-top" alt="The Ritual">
+                            <div class="card-body">
+                                <h5 class="card-title">The Ritual</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6" data-title="The Ritual"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1682773027i/141275671.jpg"
+                                class="card-img-top" alt="The Throne Of Broken Gods">
+                            <div class="card-body">
+                                <h5 class="card-title">The Throne Of Broken Gods</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7"
+                                    data-title="The Throne Of Broken Gods" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1576459099l/52871061.jpg"
+                                class="card-img-top" alt="The Predator">
+                            <div class="card-body">
+                                <h5 class="card-title">The Predator</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8" data-title="The Predator"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781501110368/it-ends-with-us-9781501110368_hr.jpg"
+                                class="card-img-top" alt="It Ends With Us">
+                            <div class="card-body">
+                                <h5 class="card-title">It Ends With Us</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5" data-title="It Ends With Us"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/617tqIGzgLL._SL1500_.jpg" class="card-img-top"
+                                alt="My Fault trilogy">
+                            <div class="card-body">
+                                <h5 class="card-title">My Fault trilogy</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6" data-title="My Fault trilogy"
+                                    data-price="72">Add To
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://natashaisabookjunkie.com/wp-content/uploads/corrupt_new.jpg"
+                                class="card-img-top" alt="Corrupt">
+                            <div class="card-body">
+                                <h5 class="card-title">Corrupt</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7" data-title="Corrupt"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/R.50f06c7f6322f89fe54029e9ab76144a?rik=hTxMLGyesSaZsg&riu=http%3a%2f%2fprodimage.images-bn.com%2fpimages%2f9798389077133_p0_v1_s1200x630.jpg&ehk=IACDOMusnZobf%2b89abAaZXRpPqsK7AQU%2b%2ftYzfl3g1w%3d&risl=&pid=ImgRaw&r=0"
+                                class="card-img-top" alt="Bloody Pledge">
+                            <div class="card-body">
+                                <h5 class="card-title">Bloody Pledge</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8" data-title="Bloody Pledge"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel-3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel-3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <h3>Fantasy</h3>
+    <div id="bookCarousel-4" class="carousel slide container-fluid" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1449778912i/22328546.jpg"
+                                class="card-img-top" alt="Red Queen">
+                            <div class="card-body">
+                                <h5 class="card-title">Red Queen</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1" data-title="Red Queen"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.4ChFBT14kucWgHUlzR6m6AHaLH?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="The Wicked King">
+                            <div class="card-body">
+                                <h5 class="card-title">The Wicked King</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="2" data-title="The Wicked King"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.wmg7ilr4xYDGQLeT93NfYwHaLL?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="The Prison Healer">
+                            <div class="card-body">
+                                <h5 class="card-title">The Prison Healer series</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="3" data-title="The Prison Healer"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://oaklandpostonline.com/wp-content/uploads/2021/10/defy-the-night.jpg"
+                                class="card-img-top" alt="Defy The Night">
+                            <div class="card-body">
+                                <h5 class="card-title">Defy The Night</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="4" data-title="Defy The Night"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.crBpFOcJgOkBItGpByZO7QAAAA?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Restore Me">
+                            <div class="card-body">
+                                <h5 class="card-title">Restore Me</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5" data-title="Restore Me"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.E-I77AORFp5S_Mf-alCdEAHaLG?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Fourth Wing">
+                            <div class="card-body">
+                                <h5 class="card-title">Fourth Wing</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6" data-title="Fourth Wing"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://1.bp.blogspot.com/-5AibhlT2b08/WmvhCGVW5TI/AAAAAAAAEwU/XDuwHjGi28MP1nfHEKsUeYjbyEcJAiEfwCLcBGAs/s1600/caraval-cover.jpeg"
+                                class="card-img-top" alt="Caraval">
+                            <div class="card-body">
+                                <h5 class="card-title">Caraval</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7" data-title="Caraval"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.J2I4Z7iP4Mj3SK-nchhofwHaLZ?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Once Upon A Broken Heart">
+                            <div class="card-body">
+                                <h5 class="card-title">Once Upon A Broken Heart</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8"
+                                    data-title="Once Upon A Broken Heart" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/71T8peQ7IkL._SL1360_.jpg" class="card-img-top"
+                                alt="Heart Of Broken Fate">
+                            <div class="card-body">
+                                <h5 class="card-title">Heart Of Broken Fate</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5"
+                                    data-title="Heart Of Broken Fate" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://1.bp.blogspot.com/-T96wv5K_NfA/X5Pz_Cbwe5I/AAAAAAAASu8/QT5SLcJcPOgScmu4eQqhprobEkU5ENiZgCLcBGAsYHQ/s2775/9781529350456.jpg"
+                                class="card-img-top" alt="Kingdom Of The Wicked">
+                            <div class="card-body">
+                                <h5 class="card-title">Kingdom Of The Wicked</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6"
+                                    data-title="Kingdom Of The Wicked" data-price="72">Add To
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://cdn.dc5.ro/img-prod/196121256-0.jpeg" class="card-img-top"
+                                alt="Kingdom Of Ash">
+                            <div class="card-body">
+                                <h5 class="card-title">Kingdom Of Ash</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7" data-title="Kingdom Of Ash"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1686658900i/64413093.jpg"
+                                class="card-img-top" alt="The City Of Stardust">
+                            <div class="card-body">
+                                <h5 class="card-title">The City Of Stardust</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8"
+                                    data-title="The City Of Stardust" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel-4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel-4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <h3>Science-Fiction</h3>
+    <div id="bookCarousel-5" class="carousel slide container-fluid" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://www.hachettebookgroup.com/wp-content/uploads/2018/11/9780316419550.jpg?fit=437%2C675"
+                                class="card-img-top" alt="The Last Astronaut">
+                            <div class="card-body">
+                                <h5 class="card-title">The Last Astronaut</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1"
+                                    data-title="The Last Astronaut" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.pT8iBgM8VVMGJkhe1qdFEAHaLc?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Broken Stars">
+                            <div class="card-body">
+                                <h5 class="card-title">Broken Stars</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="2" data-title="Broken Stars"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.pU7qlAEZPJ_Qvfig7VmG0gHaLH?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Ancestral Night">
+                            <div class="card-body">
+                                <h5 class="card-title">Ancestral Night</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="3" data-title="Ancestral Night"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://www.orbitbooks.net/wp-content/uploads/2020/11/SA-InhibitorPhase-Final-scaled.jpg"
+                                class="card-img-top" alt="Inhibitor Phase">
+                            <div class="card-body">
+                                <h5 class="card-title">Inhibitor Phase</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="4" data-title="Inhibitor Phase"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://sanfranciscobookreview.com/wp-content/uploads/destroyer_of_light.jpg"
+                                class="card-img-top" alt="Stolen Earth">
+                            <div class="card-body">
+                                <h5 class="card-title">Stolen Earth</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5" data-title="Stolen Earth"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://sanfranciscobookreview.com/wp-content/uploads/destroyer_of_light.jpg"
+                                class="card-img-top" alt="Destroyer Of Light">
+                            <div class="card-body">
+                                <h5 class="card-title">Destroyer Of Light</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6"
+                                    data-title="Destroyer Of Light" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://cdn.magzter.com/1387349878/1638359498/articles/61bc213eb1f4c/FORGING-A-NIGHTMARE.jpg"
+                                class="card-img-top" alt="Forging A Nightmare">
+                            <div class="card-body">
+                                <h5 class="card-title">Forging A Nightmare</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7"
+                                    data-title="Forging A Nightmare" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://mpd-biblio-covers.imgix.net/9780765363442.jpg" class="card-img-top"
+                                alt="The God Is Not Willing">
+                            <div class="card-body">
+                                <h5 class="card-title">The God Is Not Willing</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8"
+                                    data-title="The God Is Not Willing" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1617258542i/18952403.jpg"
+                                class="card-img-top" alt="The Veiled Throne">
+                            <div class="card-body">
+                                <h5 class="card-title">The Veiled Throne</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5" data-title="The Veiled Throne"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.8_5A1JcX7FdPFfX0wodE9AAAAA?w=331&h=500&rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Briar Heart">
+                            <div class="card-body">
+                                <h5 class="card-title">Briar Heart</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6" data-title="Briar Heart"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1667530288i/63216684.jpg"
+                                class="card-img-top" alt="Beasts Of Prey">
+                            <div class="card-body">
+                                <h5 class="card-title">Beasts Of Prey</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7" data-title="Beasts Of Prey"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1686658900i/64413093.jpg"
+                                class="card-img-top" alt="The City Of Stardust">
+                            <div class="card-body">
+                                <h5 class="card-title">The City Of Stardust</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8"
+                                    data-title="The City Of Stardust" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel-5" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel-5" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <h3>Classic Literature</h3>
+    <div id="bookCarousel-6" class="carousel slide container-fluid" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.wcZjPkH4FZD5QYi_2kfxxAHaLS?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Pride And Prejudice">
+                            <div class="card-body">
+                                <h5 class="card-title">Pride And Prejudice</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1"
+                                    data-title="Pride And Prejudice" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.e90rU3ca5fIha1ZXnwiZ3AHaL-?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="To Kill A Mockingbird">
+                            <div class="card-body">
+                                <h5 class="card-title">To Kill A Mockingbird</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="2"
+                                    data-title="To Kill A Mockingbird" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.g_ruYs50O9RO44w1p_1ISAHaLR?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="1984">
+                            <div class="card-body">
+                                <h5 class="card-title">1984</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="3" data-title="1984"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.rMdKTRfMISY_34TjI_P0VQHaJ3?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Jane Eyre">
+                            <div class="card-body">
+                                <h5 class="card-title">Jane Eyre</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="4" data-title="Jane Eyre"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://hachette.imgix.net/books/9780762498130.jpg?auto=compress,format"
+                                class="card-img-top" alt="The Great Gatsby">
+                            <div class="card-body">
+                                <h5 class="card-title">The Great Gatsby</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5" data-title="The Great Gatsby"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.Z7Z4-MbQNFxp69siG3BR3AHaLH?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Crime And Punishment">
+                            <div class="card-body">
+                                <h5 class="card-title">Crime And Punishment</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6"
+                                    data-title="Crime And Punishment" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.JIryBdF6w7_qI21FBWPiIQHaMG?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="The Catcher In The Rye">
+                            <div class="card-body">
+                                <h5 class="card-title">The Catcher In The Rye</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7"
+                                    data-title="The Catcher In The Rye" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.DFZiKG8kjSofuwssrPt_SgHaLb?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Wuthering Heights">
+                            <div class="card-body">
+                                <h5 class="card-title">Wuthering Heights</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8" data-title="Wuthering Heights"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/5e1f52b278f064001ebc4bd0.jpg"
+                                class="card-img-top" alt="The Odyssey">
+                            <div class="card-body">
+                                <h5 class="card-title">The Odyssey</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5" data-title="The Odyssey"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.J3Bds2yvtaEZ5Lgzv6AsywHaLb?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Brave New World">
+                            <div class="card-body">
+                                <h5 class="card-title">Brave New World</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6" data-title="Brave New World"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.jxtUxyB8J73Yt3vNW-MbhQHaLG?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="The Picture Of Dorian Gray">
+                            <div class="card-body">
+                                <h5 class="card-title">The Picture Of Dorian Gray</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7"
+                                    data-title="The Picture Of Dorian Gray" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.nsnSi7EQUnZ2nKso_0_b7gHaNE?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="One Flew Over The Cuckoo's Nest">
+                            <div class="card-body">
+                                <h5 class="card-title">One Flew Over The Cuckoo's Nest</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8"
+                                    data-title="One Flew Over The Cuckoo's Nest" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel-6" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel-6" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <h3>Non-Fiction</h3>
+    <div id="bookCarousel-7" class="carousel slide container-fluid" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.u9KM2rrcW8UsxXJwo5GyZgHaHa?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Furiously Happy">
+                            <div class="card-body">
+                                <h5 class="card-title">Furiously Happy</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1" data-title="Furiously Happy"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.9Bu3JORAkwlidzoLowjoYgAAAA?w=360&h=556&rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Eat Pray Love">
+                            <div class="card-body">
+                                <h5 class="card-title">Eat Pray Love</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="2" data-title="Eat Pray Love"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.twTNYxBExQ6z_PUYx7l6IAHaLg?w=600&h=932&rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Yes Please">
+                            <div class="card-body">
+                                <h5 class="card-title">Yes Please</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="3" data-title="Yes Please"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.bwTtd9RKRTGlYM3JHuETTwAAAA?w=300&h=400&rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Rise Of The Rocket Girls">
+                            <div class="card-body">
+                                <h5 class="card-title">Rise Of The Rocket Girls</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="4"
+                                    data-title="Rise Of The Rocket Girls" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/interior_spreads/9781476723426/hungry-heart-9781476723426.in01.jpg"
+                                class="card-img-top" alt="Hungry Heart">
+                            <div class="card-body">
+                                <h5 class="card-title">Hungry Heart</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5" data-title="Hungry Heart"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.SIamlW1s-GT1vNMKDyypMQHaMP?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="I Know Why The Caged Birds Sing">
+                            <div class="card-body">
+                                <h5 class="card-title">I Know Why The Caged Birds Sing</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6"
+                                    data-title="I Know Why The Caged Birds Sing" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.qHzIEA1eAvOYq_g_C_w4VgHaLR?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Year Of Yes">
+                            <div class="card-body">
+                                <h5 class="card-title">Year Of Yes</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7" data-title="Year Of Yes"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.NzK8R6R6TimMYr2h7FPaXwHaLG?w=667&h=1000&rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="The Zoo Keeper's Wife">
+                            <div class="card-body">
+                                <h5 class="card-title">The Zoo Keeper's Wife</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8"
+                                    data-title="The Zoo Keeper's Wife" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.ySPIAUJJ4kGDFE1NZ_9BfgHaLH?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="When Breath Becomes Air">
+                            <div class="card-body">
+                                <h5 class="card-title">When Breath Becomes Air</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5"
+                                    data-title="When Breath Becomes Air" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.d9QZUubRs-gAdv02z2Ld7QHaLs?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="The Glass Castle">
+                            <div class="card-body">
+                                <h5 class="card-title">The Glass Castle</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6" data-title="The Glass Castle"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.jxtUxyB8J73Yt3vNW-MbhQHaLG?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Into The Wild">
+                            <div class="card-body">
+                                <h5 class="card-title">Into The Wild</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7" data-title="Into The Wild"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://cdn.shopify.com/s/files/1/0021/1697/6715/products/img_3c623fb5-fd10-42c1-bbf4-6a15d1fa0c42_2048x2048.jpg?v=1597720696"
+                                class="card-img-top" alt="Between The World And Me">
+                            <div class="card-body">
+                                <h5 class="card-title">Between The World And Me</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8"
+                                    data-title="Between The World And Me" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel-7" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel-7" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <h3>Horror</h3>
+    <div id="bookCarousel-8" class="carousel slide container-fluid" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.udOC_ZdDAQJI9CKqHz2PMwAAAA?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="The Girl Next Door">
+                            <div class="card-body">
+                                <h5 class="card-title">The Girl Next Door</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1"
+                                    data-title="The Girl Next Door" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.EjAg51GWk0GXlMOAF-IjPwHaLg?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Then She Was Gone">
+                            <div class="card-body">
+                                <h5 class="card-title">Then She Was Gone</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="2" data-title="Then She Was Gone"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.63rLI0FEDmt0E6-aPM2VJAHaLU?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="The Taking Of Annie Thorne">
+                            <div class="card-body">
+                                <h5 class="card-title">The Taking Of Annie Thorne</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="3"
+                                    data-title="The Taking Of Annie Thorne" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.zoOJemvxpvXc68TO46KzVAHaMJ?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="Sharp Objects">
+                            <div class="card-body">
+                                <h5 class="card-title">Sharp Objects</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="4" data-title="Sharp Objects"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://thebookishlibra.com/wp-content/uploads/2017/08/emma-in-the-night.jpg"
+                                class="card-img-top" alt="Emma In The Night">
+                            <div class="card-body">
+                                <h5 class="card-title">Emma In The Night</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5" data-title="Emma In The Night"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/81Bf-Z5XitL.jpg"
+                                class="card-img-top" alt="The Woman In The Window">
+                            <div class="card-body">
+                                <h5 class="card-title">The Woman In The Window</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6"
+                                    data-title="The Woman In The Window" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP._zvKxYLnJyvS0Z3ARyA9iwHaLM?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="The Haunting Of Hill House">
+                            <div class="card-body">
+                                <h5 class="card-title">The Haunting Of Hill House</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7"
+                                    data-title="The Haunting Of Hill House" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://i.pinimg.com/originals/65/b2/8f/65b28fab610020dab3247ee61ccdd335.jpg"
+                                class="card-img-top" alt="Summer Of Night">
+                            <div class="card-body">
+                                <h5 class="card-title">Summer Of Night</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8" data-title="Summer Of Night"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.lWDi-xbzXlZUUQq85jT66gHaLM?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="House Of Hunger">
+                            <div class="card-body">
+                                <h5 class="card-title">House Of Hunger</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="5" data-title="House Of Hunger"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://i5.walmartimages.com/asr/576821ab-e0e0-4b41-a032-3f408db281d3.0c6b292467bf8c11fa23e80aa9e934c3.jpeg"
+                                class="card-img-top" alt="Haunting Of Ashburn House">
+                            <div class="card-body">
+                                <h5 class="card-title">Haunting Of Ashburn House</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="6"
+                                    data-title="Haunting Of Ashburn House" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.dB0Jgch4Jbo0jj-ojmHjGAHaLM?rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="The September House">
+                            <div class="card-body">
+                                <h5 class="card-title">The September House</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="7"
+                                    data-title="The September House" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://th.bing.com/th/id/OIP.B_uSj3uXhiJoTQip7E6ywAHaLb?w=1556&h=2400&rs=1&pid=ImgDetMain"
+                                class="card-img-top" alt="The Invited">
+                            <div class="card-body">
+                                <h5 class="card-title">The Invited</h5>
+                                <p class="card-text">₹72</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="8" data-title="The Invited"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel-8" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel-8" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <script src="books.js"></script>
+</body>
+
+</html>

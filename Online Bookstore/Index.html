@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Antiques</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" sizes="40x40" href="/book icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/Index.css">
+</head>
+
+<body>
+    <header>
+        <div class="heading-container container-fluid">
+            <h1>THE BOOK ANTIQUES</h1>
+            <nav>
+                <div class="dropdown-center">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Account
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/account.html">Log In</a></li>
+                        <li><a class="dropdown-item" href="signin.html">New here? Sign In</a></li>
+                        <hr>
+                        <li><a class="dropdown-item" href="#">Your Orders</a></li>
+                    </ul>
+                </div> |
+                <a href="/Index.html">Home</a> |
+                <a href="/books.html">Books</a> |
+                <a href="/about.html">About Us</a> |
+                <div class="cart-container">
+                    <a href="/cart.html" class="btn btn-light position-relative">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="searchcomponent">
+            <input type="text" placeholder="Search by Title, Author, Publisher or ISBN" id="inputbar" class="inputbar">
+            <div class="search-icon" role="button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Banner Section -->
+    <div class="banner">
+        <div class="bg-image"></div>
+        <div id="bg-text" class="container">
+            <h2>Welcome to the Best Online Bookstore!</h2>
+            <p>Explore thousands of books from different genres and authors.</p>
+        </div>
+    </div>
+
+    <!-- Featured Books Section -->
+    <section class="featured">
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Featured Books</h2>
+            <div id="featuredBooksCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-around">
+                            <div class="book-card" data-title="A Good Girl's Guide To Murder"
+                                data-author="Holly Jackson">
+                                <img src="https://th.bing.com/th/id/OIP.K9IcEJi4P3zE2eP3O-3nnAHaLY?w=1200&h=1845&rs=1&pid=ImgDetMain"
+                                    alt="A Good Girl's Guide To Murder" class="d-block w-100">
+                                <h3>A Good Girl's Guide To Murder</h3>
+                                <p>Holly Jackson</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1"
+                                    data-title="A Good Girl's Guide To Murder" data-price="72">Add To Cart</button>
+                            </div>
+                            <div class="book-card" data-title="Haunting Adeline" data-author="H.D. Carlton">
+                                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1628900532i/58763686.jpg"
+                                    alt="Haunting Adeline" class="d-block w-100">
+                                <h3>Haunting Adeline</h3>
+                                <p>H.D. Carlton</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1" data-title="Haunting Adeline"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                            <div class="book-card" data-title="Harry Potter and The Philosopher's Stone"
+                                data-author="J.K. Rowling">
+                                <img src="https://i.pinimg.com/originals/1b/2b/fa/1b2bfa193ec0b2e72af49991ea0aff1a.jpg"
+                                    alt="Harry Potter and The Philosopher's Stone" class="d-block w-100">
+                                <h3>Harry Potter and The Philosopher's Stone</h3>
+                                <p>J.K. Rowling</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1"
+                                    data-title="Harry Potter and The Philosopher's Stone" data-price="72">Add To
+                                    Cart</button>
+                            </div>
+                            <div class="book-card" data-title="Truly Devious Series" data-author="J.K. Rowling">
+                                <img src="https://i5.walmartimages.com/asr/c25f92ba-28f0-49d9-add7-ea1d2abf756e.16d0785869dd1954cbc0fd6968c1d607.jpeg"
+                                    alt="Truly Devious Series" class="d-block w-100">
+                                <h3>Truly Devious Series</h3>
+                                <p>J.K. Rowling</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1"
+                                    data-title="Truly Devious Series" data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-around">
+                            <div class="book-card" data-title="Red Queen" data-author="Holly Jackson">
+                                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1449778912i/22328546.jpg"
+                                    alt="Red Queen" class="d-block w-100">
+                                <h3>Red Queen</h3>
+                                <p>Holly Jackson</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1" data-title="Red Queen"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                            <div class="book-card" data-title="Forging A Nightmare" data-author="H.D. Carlton">
+                                <img src="https://cdn.magzter.com/1387349878/1638359498/articles/61bc213eb1f4c/FORGING-A-NIGHTMARE.jpg"
+                                    alt="Forging A Nightmare" class="d-block w-100">
+                                <h3>Forging A Nightmare</h3>
+                                <p>H.D. Carlton</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1"
+                                    data-title="Forging A Nightmare" data-price="72">Add To Cart</button>
+                            </div>
+                            <div class="book-card" data-title="Pride And Prejudice" data-author="J.K. Rowling">
+                                <img src="https://th.bing.com/th/id/OIP.wcZjPkH4FZD5QYi_2kfxxAHaLS?rs=1&pid=ImgDetMain"
+                                    alt="Pride And Prejudice" class="d-block w-100">
+                                <h3>Pride And Prejudice</h3>
+                                <p>Jane Austen</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1"
+                                    data-title="Pride And Prejudice" data-price="72">Add To Cart</button>
+                            </div>
+                            <div class="book-card" data-title="Then She Was Gone" data-author="J.K. Rowling">
+                                <img src="https://th.bing.com/th/id/OIP.EjAg51GWk0GXlMOAF-IjPwHaLg?rs=1&pid=ImgDetMain"
+                                    alt="Then She Was Gone" class="d-block w-100">
+                                <h3>Then She Was Gone</h3>
+                                <p>J.K. Rowling</p>
+                                <button class="btn btn-secondary add-to-cart" data-id="1" data-title="Then She Was Gone"
+                                    data-price="72">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#featuredBooksCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featuredBooksCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured authors Section -->
+    <section class="featured">
+        <div class="container">
+            <h2>Featured Authors</h2>
+            <div class="book-grid">
+                <div class="book" data-author="Holly Jackson">
+                    <img src="https://images.gr-assets.com/authors/1532348714p8/18229614.jpg" alt="Holly Jackson">
+                    <h3>Holly Jackson</h3>
+                </div>
+                <div class="book" data-author="A.J. Finn">
+                    <img src="https://th.bing.com/th/id/OIP.1l0N1ZfiCAYAX5e-jfsQCQHaHY?rs=1&pid=ImgDetMain"
+                        alt="A.J. Finn">
+                    <h3>A.J. Finn</h3>
+                </div>
+                <div class="book" data-author="J.K. Rowling">
+                    <img src="https://media1.popsugar-assets.com/files/thumbor/xoL-F0Mb8WkatkeD7ugAgRr6XbM/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/04/01/505/n/24155406/tmp_RPn3v6_71aa4c8805a83f07_GettyImages-1061365848.jpg"
+                        alt="Harry porter and The Philosopher's Stone">
+                    <h3>J.K. Rowling</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>our locations</h3>
+                    <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+                    <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+                </div>
+
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="./index.html"> <i class="fas fa-arrow-right"></i> home </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> Category </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> feedback </a>
+                </div>
+
+                <div class="box">
+                    <h3>extra links</h3>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+                </div>
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#"> <i class="fas fa-phone"></i> 79860XXXXX </a>
+                    <a href="#"> <i class="fas fa-phone"></i> 77388XXXXX </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> navneet0583.becse@chitkara.edu.in </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> navdisha0580.becse@chitkara.edu.in </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> navjot0581.becse@chitkara.edu.in </a>
+                    <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/worldmap.png"
+                        class="map" alt="Locations Map">
+                </div>
+
+            </div>
+
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </section>
+
+        <div class="container">
+            <p>&copy; 2024 The Book Antiques. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script>
+        // Function to filter books based on search input
+        document.getElementById('inputbar').addEventListener('input', function () {
+            const searchQuery = this.value.toLowerCase();
+            const books = document.querySelectorAll('.book-card');
+
+            books.forEach(function (book) {
+                const title = book.getAttribute('data-title').toLowerCase();
+                const author = book.getAttribute('data-author').toLowerCase();
+
+                // If the title or author contains the search query, show the book, otherwise hide it
+                if (title.includes(searchQuery) || author.includes(searchQuery)) {
+                    book.style.display = 'block';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        });
+
+        function addToCart(id, title, price) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ id, title, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            window.location.href = '/cart.html';
+        }
+
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function () {
+                const id = this.getAttribute('data-id');
+                const title = this.getAttribute('data-title');
+                const price = this.getAttribute('data-price');
+                addToCart(id, title, price);
+            });
+        });
+
+        document.getElementById("searchInput").addEventListener("input", function () {
+            let query = this.value.toLowerCase();
+            let books = document.querySelectorAll(".book-card");
+
+            books.forEach(function (book) {
+                let title = book.querySelector(".card-title").innerText.toLowerCase();
+                if (title.includes(query)) {
+                    book.style.display = "block"; // Show book
+                } else {
+                    book.style.display = "none"; // Hide book
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

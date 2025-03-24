@@ -1,3 +1,4 @@
+
 The To-Do List project is designed to help users organize their tasks efficiently and boost productivity. With an intuitive interface and robust functionality, it simplifies task management and keeps users focused on their priorities.
 
 ### Key Features:
@@ -8,4 +9,5 @@ The To-Do List project is designed to help users organize their tasks efficientl
 - **Responsive Design:** Accessible across various devices for convenience.
 
 This project empowers users to stay organized and achieve their goals, one task at a time. 
+
 

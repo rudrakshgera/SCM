@@ -7,5 +7,5 @@ The To-Do List project is designed to help users organize their tasks efficientl
 - **Delete Tasks:** Remove unnecessary or completed tasks effortlessly.
 - **Responsive Design:** Accessible across various devices for convenience.
 
-This project empowers users to stay organized and achieve their goals, one task at a time.
+This project empowers users to stay organized and achieve their goals, one task at a time. 
 

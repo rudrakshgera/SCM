@@ -56,7 +56,7 @@ a:active {
 header .searchcomponent {
     display: flex;
     width: 310px;
-    height: 28px;
+    height: 27px;
     background-color: #666666;
     border-radius: 3px;
 }
